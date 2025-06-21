@@ -32,7 +32,7 @@
 
     .video-container {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 ratio */
+      padding-bottom: 45%; /* tighter landscape ratio */
       height: 0;
       margin-top: 30px;
       max-width: 960px;
@@ -48,6 +48,12 @@
       height: 100%;
       border: none;
     }
+
+    @media (max-width: 768px) {
+      .video-container {
+        padding-bottom: 56.25%; /* fallback to 16:9 for small screens */
+      }
+    }
   </style>
 </head>
 <body>
@@ -55,16 +61,6 @@
   <p>I've sent you confirmation of your call's time and date via email & text.<br>
   Please make sure you put this in your calendar right now 😊</p>
 
-  <h2>📺 Watch this quick video on what to do next:</h2>
-
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lGEa3dA83XM"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
-</body>
-</html>
+  <h2>📺 Watch this quick video on what to d
 
 
