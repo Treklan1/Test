@@ -32,13 +32,17 @@
 
     .video-container {
       position: relative;
-      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
       max-width: 960px;
-      margin: 30px auto 0 auto;
-      aspect-ratio: 16 / 9;
+      margin: 30px auto;
     }
 
     .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       border: none;
@@ -50,7 +54,18 @@
   <p>I've sent you confirmation of your call's time and date via email & text.<br>
   Please make sure you put this in your calendar right now 😊</p>
 
-  <h2>📺 Watch this quick video on w
+  <h2>📺 Watch this quick video on what to do next:</h2>
+
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/lGEa3dA83XM?autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1"
+      title="Next Steps"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
 
 
 
