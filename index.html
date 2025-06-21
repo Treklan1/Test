@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Appointment Confirmed</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background-color: #1f2937;
-      color: #fefefe;
+      margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #1e2a38;
+      color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
+
     h1 {
       color: #facc15;
-      font-size: 28px;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #cbd5e1;
+    }
+
+    h2 {
+      color: #facc15;
+      font-size: 1.5rem;
       margin-bottom: 20px;
     }
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 960px;
+      margin: 0 auto;
     }
-    iframe {
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      max-width: 560px;
-      height: 315px;
+      height: 100%;
       border: none;
-      border-radius: 10px;
-    }
-    .video-wrapper {
-      display: flex;
-      justify-content: center;
     }
   </style>
 </head>
 <body>
-
   <h1>🎉 Congratulations! Your Appointment Has Been Scheduled & Confirmed…</h1>
-  <p>I’ve sent you confirmation of your call's time and date via email & text.<br>
-     Please make sure you put this in your calendar right now 😊</p>
+  <p>I've sent you confirmation of your call's time and date via email & text.<br>
+  Please make sure you put this in your calendar right now 😊</p>
 
-  <h2 style="color:#facc15; margin-bottom: 10px;">📹 Watch this quick video on what to do next:</h2>
-  <div class="video-wrapper">
-    <iframe 
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-      title="Next Steps Video" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+  <h2>📺 Watch this quick video on what to do next:</h2>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&rel=0"
+            title="Next Steps Video"
+            allowfullscreen></iframe>
   </div>
-
 </body>
 </html>
+
